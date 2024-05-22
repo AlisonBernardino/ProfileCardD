@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+  font-family: "Calibri", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --basicBlackColor: rgb(1, 1, 1);
+  --basicWhiteColor: rgb(248, 248, 248);
+  --basicGrayColor: rgb(100, 100, 100);
+  --darkGrayColor: rgb(45, 45, 45);
+  --basicBrownColor: rgb(130, 51, 8);
+  --goldenYellowColor: rgb(243, 222, 34);
+  --limeGreenColor: rgb(154, 232, 103);
+  --lightGreenAColor: rgb(83, 177, 69);
+  --lightGreenBColor: rgb(50, 165, 35);
+  --neonGreenColor: rgb(0, 248, 29);
+  --lightBlueAndGrayColor: rgb(144, 169, 160);
+  --softBlueColor: rgb(52, 128, 200);
+  --neonBlueColor: rgb(0, 234, 255);
+  --darkerBlueColor: rgb(40, 75, 180);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("https://wallpapers.com/images/featured/4k-tech-ulcajgzzc25jlrgi.webp");
+  background-repeat: down;
+  background-size: 100%;
+}
+
+/* Content A - INITIAL point */
+
+.initialBackgroundArea {
+  background-color: var(--basicBlackColor);
+}
+.contentArea {
+  margin: 15px 2px;
+}
+
+.imageArea img {
+  display: block;
+  height: 150px;
+  width: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 3px var(--neonBlueColor);
+}
+
+.box {
+  height: fit-content;
+  text-align: center;
+  width: 350px;
+  border-radius: 20px;
+  padding: 10px;
+  background: var(--basicWhiteColor);
+}
+
+.boxA {
+  margin-top: 10px;
+}
+
+.boxB {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.levelArea {
+  display: block;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  width: 80px;
+  padding: 3px;
+  margin: 0px auto 10px;
+  border-radius: 5px;
+  background-color: var(--basicGrayColor);
+  color: var(--basicWhiteColor);
+}
+
+.textArea {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.nameItem {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+.jobTitleItem {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: -2px;
+  color: var(--basicGrayColor);
+}
+
+.aboutArea {
+  background-color: var(--neonBlueColor);
+  font-weight: bolder;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin: 20px auto 10px;
+  width: 130px;
+}
+
+.iconsArea {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 30px;
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.iconsArea button {
+  border: none;
+  font-size: 1em;
+  height: fit-content;
+  width: fit-content;
+  background-color: var(--basicWhiteColor);
+}
+
+.iconsArea button:hover {
+  transition: 0.5s;
+  color: var(--darkerBlueColor);
+  background-color: var(--basicWhiteColor);
+}
+
+.buttonsArea {
+  display: flex;
+  font-weight: bolder;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 40px;
+  margin: 20px 30px 0px;
+  border: none;
+}
+
+.buttonsArea .messageItem {
+  font-weight: bolder;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 130px;
+  height: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: var(--softBlueColor);
+  color: var(--basicWhiteColor);
+  border: 1px solid var(--basicBlackColor);
+}
+
+.buttonsArea .connectItem {
+  font-weight: bolder;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 130px;
+  height: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: var(--softBlueColor);
+  color: var(--basicWhiteColor);
+  border: 1px solid var(--basicBlackColor);
+}
+
+.buttonsArea .messageItem:hover {
+  letter-spacing: 1px;
+  transition: 0.6s;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px var(--neonBlueColor);
+  color: var(--neonBlueColor);
+  background-color: var(--basicBlackColor);
+}
+
+.buttonsArea .messageItem:active {
+  background-color: var(--neonGreenColor);
+  color: var(--basicBlackColor);
+  transition: 0.2s;
+}
+
+.buttonsArea .connectItem:hover {
+  letter-spacing: 1px;
+  transition: 0.6s;
+  color: var(--neonBlueColor);
+  background-color: var(--basicBlackColor);
+  box-shadow: 3px 3px 3px var(--neonBlueColor);
+  border-radius: 7px;
+}
+
+.buttonsArea .connectItem:active {
+  background-color: var(--neonGreenColor);
+  color: var(--basicBlackColor);
+  transition: 0.2s;
+}
+
+.socialPlatformDataArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.socialPlatformDataArea .itemElementA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  background-color: var(--darkerBlueColor);
+  color: var(--basicWhiteColor);
+}
+
+.aboutArea {
+  background-color: var(--neonBlueColor);
+  font-weight: bolder;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin: 20px auto 10px;
+  width: 130px;
+}
+
+/* Content A - END point */
